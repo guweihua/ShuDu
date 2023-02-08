@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="click"
+            type="com.gwh.walkplanet.ui.activity.PictureSelectorDemoActivity.ProxyClick" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.PictureSelectorDemoActivity">
+
+
+        <Button
+            android:layout_marginTop="@dimen/gwm_dp_100"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tv_select_pic"
+            android:text="打开相册"
+            style="@style/tvNormalStyles"
+            android:background="@drawable/bg_radius_blue_10"
+            android:padding="@dimen/gwm_dp_10"
+            android:onClick="@{()->click.openLoaclPic()}"
+           />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

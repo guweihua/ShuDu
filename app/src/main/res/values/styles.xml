@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <style name="tvNormalStyles">
+        <item name="android:textColor">@color/tv_333</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/gwm_sp_15</item>
+    </style>
+
+    <style name="tvNormalSmallStyles">
+        <item name="android:textColor">@color/tv_666</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/gwm_sp_13</item>
+    </style>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="click"
+            type="com.gwh.walkplanet.ui.activity.DemoRequestDataActivity.ProxyClick" />
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.DemoRequestDataActivity">
+
+
+        <TextView
+            android:padding="10dp"
+            android:text="请求数据"
+            android:id="@+id/tv_clcik"
+            android:onClick="@{()->click.requestData()}"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+           style="@style/tvNormalStyles"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

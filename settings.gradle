@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        //阿里云jcenter仓库
+        maven{ url 'https://maven.aliyun.com/repository/jcenter' }
+    }
+}
+rootProject.name = "WalkPlanet"
+include ':app'
+include ':vip_base'
+
