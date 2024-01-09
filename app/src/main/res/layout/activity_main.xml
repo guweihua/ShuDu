@@ -1,109 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
-        <variable
-            name="click"
-            type="com.gwh.walkplanet.ui.activity.MainActivity.ProxyClick" />
 
 
     </data>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingLeft="@dimen/gwm_dp_20"
-        android:paddingRight="@dimen/gwm_dp_20">
-
-        <Button
-            android:id="@+id/bt_select_pic"
-            android:text="选择图片"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <Button
-            android:id="@+id/bt_request_data"
-            android:text="请求数据"
-            android:onClick="@{()->click.testRequestData()}"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-
-
-
-        <Button
-            android:id="@+id/btn_activity"
+    <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Activity简单继承使用" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@mipmap/splash"
+            tools:context=".ui.activity.MainActivity">
 
-        <Button
-            android:id="@+id/btn_view_model"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ViewModel使用" />
 
-        <Button
-            android:id="@+id/btn_repository"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="结合Repository使用" />
+        <androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginTop="@dimen/gwm_dp_40"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@mipmap/ic_index_setting"
+                android:padding="@dimen/gwm_dp_5"
+                android:layout_marginStart="@dimen/gwm_dp_5"
+                android:id="@+id/iv_setting2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="@dimen/gwm_dp_40"
+                android:layout_height="@dimen/gwm_dp_40"/>
 
-        <Button
-            android:id="@+id/btn_data_bind"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="DataBiding使用" />
+        <androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginTop="@dimen/gwm_dp_40"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@mipmap/ic_music_open"
+                android:id="@+id/iv_music_status"
+                android:layout_marginEnd="@dimen/gwm_dp_5"
+                android:padding="@dimen/gwm_dp_5"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="@dimen/gwm_dp_40"
+                android:layout_height="@dimen/gwm_dp_40"/>
 
-        <Button
-            android:id="@+id/btn_action_bar_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="标题栏右侧文字按钮" />
 
-        <Button
-            android:id="@+id/btn_action_bar_image"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="标题栏右侧图片按钮" />
+        <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="400dp"
+                android:layout_width="@dimen/gwm_dp_150"
+                android:src="@mipmap/ic_player"
+                android:id="@+id/iv_play"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="@dimen/gwm_dp_40"/>
 
-        <Button
-            android:id="@+id/btn_status_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="透明状态栏" />
 
-        <Button
-            android:id="@+id/btn_status_bar_change"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="状态栏改变" />
+        <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/gwm_dp_50"
+                android:layout_width="@dimen/gwm_dp_150"
+                android:src="@mipmap/ic_setting"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_play"
+                android:id="@+id/iv_setting"
+                android:layout_height="@dimen/gwm_dp_40"/>
 
-        <Button
-            android:id="@+id/btn_pager"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="BaseFragmentPagerAdapter使用" />
 
-        <Button
-            android:id="@+id/btn_fragment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fragment简单继承使用" />
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_gravity="center"
+                app:layout_constraintRight_toRightOf="@id/iv_setting"
+                app:layout_constraintLeft_toLeftOf="@id/iv_setting"
+                app:layout_constraintTop_toBottomOf="@id/iv_setting"
+                android:layout_marginTop="@dimen/gwm_dp_10"
+                android:layout_width="0dp"
+                android:background="@drawable/bg_radius_blue_8"
+                android:id="@+id/iv_xieyi"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Privacy Agreement"
+                android:layout_height="@dimen/gwm_dp_40"/>
 
-        <Button
-            android:id="@+id/btn_fragment_view_model"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fragment—ViewModel使用" />
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/iv_xieyi"
+                app:layout_constraintRight_toRightOf="@id/iv_setting"
+                app:layout_constraintLeft_toLeftOf="@id/iv_setting"
+                android:layout_marginTop="@dimen/gwm_dp_10"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:background="@drawable/bg_radius_blue_8"
+                android:id="@+id/iv_music"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Music"
+                android:layout_height="@dimen/gwm_dp_40"/>
 
-        <Button
-            android:id="@+id/btn_bus"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="事件总线使用" />
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </layout>

@@ -1,5 +1,6 @@
 package com.vip.base.config
 
+import android.graphics.Color
 import android.view.View
 import com.vip.base.R
 
@@ -10,7 +11,7 @@ import com.vip.base.R
  */
 object BaseConfig {
     @JvmStatic
-    var statusBarColor = R.color.base_color_ffffff // 状态栏背景颜色
+    var statusBarColor = Color.TRANSPARENT // 状态栏背景颜色
 
     @JvmStatic
     var statusBarDarkMode = true // 状态栏文字颜色

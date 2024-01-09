@@ -1,4 +1,4 @@
-package com.gwh.walkplanet
+package com.gwh.numberoperation
 
 import org.junit.Test
 

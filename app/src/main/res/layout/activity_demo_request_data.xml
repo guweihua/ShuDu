@@ -7,7 +7,7 @@
     <data>
         <variable
             name="click"
-            type="com.gwh.walkplanet.ui.activity.DemoRequestDataActivity.ProxyClick" />
+            type="com.gwh.numberoperation.ui.activity.DemoRequestDataActivity.ProxyClick" />
 
     </data>
 

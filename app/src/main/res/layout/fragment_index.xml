@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/gwm_dp_20"
+            android:background="@mipmap/index_bg"
+            android:paddingRight="@dimen/gwm_dp_20">
+
+
+        <Button
+                android:text="选择难度"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_gravity="right"
+                android:id="@+id/bt_select_nandu"
+                android:layout_marginEnd="@dimen/gwm_dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/rv_show_num"
+                android:layout_marginTop="@dimen/gwm_dp_50"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gwm_dp_120"/>
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/gwm_dp_20"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gwm_dp_50">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    tools:text="+"
+                    android:id="@+id/tv_fuhao_1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_radius_green_4"
+                    android:layout_width="@dimen/gwm_dp_50"
+                    android:layout_height="@dimen/gwm_dp_40"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    tools:text="+"
+                    android:id="@+id/tv_fuhao_2"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+
+                    android:layout_marginStart="@dimen/gwm_dp_40"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_radius_green_4"
+                    android:layout_width="@dimen/gwm_dp_50"
+                    android:layout_height="@dimen/gwm_dp_40"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/gwm_dp_50"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent" android:layout_height="@dimen/gwm_dp_50">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    tools:text="1"
+                    android:id="@+id/tv_result_1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_radius_blue_4"
+                    android:layout_width="@dimen/gwm_dp_30"
+                    android:layout_height="@dimen/gwm_dp_25"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    tools:text="+"
+                    android:id="@+id/tv_result_fuhao1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/gwm_dp_20"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_radius_green_4"
+                    android:layout_width="@dimen/gwm_dp_30"
+                    android:layout_height="@dimen/gwm_dp_25"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    tools:text="2"
+                    android:id="@+id/tv_result_2"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/gwm_dp_20"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_radius_blue_4"
+                    android:layout_width="@dimen/gwm_dp_30"
+                    android:layout_height="@dimen/gwm_dp_25"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    tools:text="+"
+                    android:id="@+id/tv_result_fuhao2"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/gwm_dp_20"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_radius_green_4"
+                    android:layout_width="@dimen/gwm_dp_30"
+                    android:layout_height="@dimen/gwm_dp_25"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    tools:text="2"
+                    android:id="@+id/tv_result_3"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/gwm_dp_20"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_radius_blue_4"
+                    android:layout_width="@dimen/gwm_dp_30"
+                    android:layout_height="@dimen/gwm_dp_25"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:text="="
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/gwm_dp_10"
+                    android:textColor="@color/black"
+                    android:layout_width="@dimen/gwm_dp_30"
+                    android:layout_height="@dimen/gwm_dp_25"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    tools:text="2"
+                    android:id="@+id/tv_result"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/gwm_dp_10"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_radius_success_4"
+                    android:layout_width="@dimen/gwm_dp_30"
+                    android:layout_height="@dimen/gwm_dp_25"/>
+
+
+        </LinearLayout>
+
+
+        <Button
+                android:id="@+id/bt_check"
+                android:text="提交"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/gwm_dp_50"
+                android:layout_width="@dimen/gwm_dp_60" android:layout_height="@dimen/gwm_dp_40"/>
+
+
+        <Button
+                android:id="@+id/bt_getnew"
+                android:text="重新出题"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/gwm_dp_50"
+                android:layout_width="wrap_content" android:layout_height="@dimen/gwm_dp_40"/>
+
+
+    </LinearLayout>
+</layout>
+

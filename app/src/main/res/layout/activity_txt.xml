@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@mipmap/splash"
+            android:layout_height="match_parent"
+            tools:context=".ui.activity.TxtActivity">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:src="@mipmap/ic_back"
+                android:padding="@dimen/gwm_dp_10"
+                android:layout_width="48dp"
+                android:id="@+id/iv_back"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/gwm_dp_30"
+                android:layout_height="48dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+                android:text="About Us"
+                android:textColor="@color/white"
+                android:textSize="@dimen/gwm_sp_25"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/iv_back"
+                app:layout_constraintTop_toTopOf="@id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="@dimen/gwm_dp_10"
+                android:text="The number game is a puzzle game that gives you 4 numbers. Use addition, subtraction, multiplication, division and parentheses to find the answer. Each number can only be used once. This game can exercise your mathematical calculation skills and logical thinking skills, and can also increase your fun and challenge."
+                android:layout_width="match_parent"
+                android:textSize="@dimen/gwm_sp_25"
+                app:layout_constraintTop_toBottomOf="@id/iv_back"
+                android:layout_marginHorizontal="@dimen/gwm_dp_10"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
