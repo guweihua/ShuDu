@@ -54,7 +54,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
         }
 
 
-        mBinding.ivMusic.setOnClickListener {
+        mBinding.ivMusicStatus.setOnClickListener {
             val musicStatus = CacheUtil.getMusicStatus()
             if (musicStatus){
                // mBinding.ivMusic.text = "Music/close"
