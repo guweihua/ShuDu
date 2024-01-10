@@ -3,10 +3,10 @@ project.ext {
     isModuleDebug = false
     isModuleName = ""//单独调试module名
     //基础信息配置
-    compileSdkVersion = 32
+    compileSdkVersion = 33
    // buildToolsVersion = "30.0.2"
     minSdkVersion = 21
-    targetSdkVersion = 32
+    targetSdkVersion = 33
     applicationId = "com.gwh.numberoperation"
     versionCode = 1
     versionName = "1.0.0"
