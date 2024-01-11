@@ -1,4 +1,4 @@
-package com.gwh.numberoperation
+package com.gwh.math
 
 import org.junit.Test
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.gwh.numberoperation">
+          package="com.gwh.math">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <!--
@@ -20,8 +20,7 @@
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
     <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-     -->
-
+    -->
     <queries package="${applicationId}">
         <intent>
             <action android:name="android.media.action.IMAGE_CAPTURE"/>
@@ -44,6 +43,15 @@
             android:theme="@style/AppTheme"
             tools:replace="android:icon"
             tools:targetApi="31">
+        <activity
+                android:name=".ui.activity.GameActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".ui.activity.Game2Activity"
+                android:exported="false"/>
+        <activity
+                android:name=".ui.activity.MathActivity"
+                android:exported="false"/>
         <activity
                 android:name=".ui.activity.YinSiXieYiActivity"
                 android:exported="false"/>

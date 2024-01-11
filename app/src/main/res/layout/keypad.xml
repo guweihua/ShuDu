@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TableLayout
+            android:id="@+id/keypad"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/gwm_dp_10"
+            android:layout_width="wrap_content"
+            android:paddingEnd="@dimen/gwm_dp_20"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+        <TableRow
+        android:layout_marginTop="@dimen/gwm_dp_10"
+        >
+            <Button android:id="@+id/keypad_1"
+                    android:layout_marginStart="@dimen/gwm_dp_20"
+                    style="@style/btNormalStyles"
+                    android:text="1"/>
+            <Button android:id="@+id/keypad_2"
+                    android:layout_marginStart="@dimen/gwm_dp_20"
+                    style="@style/btNormalStyles"
+                    android:text="2"/>
+            <Button android:id="@+id/keypad_3"
+                    android:layout_marginStart="@dimen/gwm_dp_20"
+                    style="@style/btNormalStyles"
+                    android:text="3"/>
+            <Button android:id="@+id/keypad_4"
+                    android:layout_marginStart="@dimen/gwm_dp_20"
+                    style="@style/btNormalStyles"
+                    android:text="4"/>
+        </TableRow>
+        <TableRow
+                android:layout_marginTop="@dimen/gwm_dp_10">
+
+            <Button android:id="@+id/keypad_5"
+                    style="@style/btNormalStyles"
+                    android:layout_marginStart="@dimen/gwm_dp_20"
+                    android:text="5"/>
+            <Button android:id="@+id/keypad_6"
+                    style="@style/btNormalStyles"
+                    android:layout_marginStart="@dimen/gwm_dp_20"
+                    android:text="6"/>
+            <Button android:id="@+id/keypad_7"
+                    style="@style/btNormalStyles"
+                    android:layout_marginStart="@dimen/gwm_dp_20"
+                    android:text="7"/>
+            <Button android:id="@+id/keypad_8"
+                    style="@style/btNormalStyles"
+                    android:layout_marginStart="@dimen/gwm_dp_20"
+                    android:text="8"/>
+        </TableRow>
+        <TableRow
+                android:layout_marginTop="@dimen/gwm_dp_10">
+
+            <Button android:id="@+id/keypad_9"
+                    style="@style/btNormalStyles"
+                    android:layout_marginStart="@dimen/gwm_dp_20"
+                    android:text="9"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:src="@mipmap/ic_cachu"
+                    android:layout_width="@dimen/gwm_dp_40"
+                    android:layout_marginStart="@dimen/gwm_dp_10"
+                    android:id="@+id/ic_cachu"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/gwm_dp_40"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

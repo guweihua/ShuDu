@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="@mipmap/splash"
+            android:background="@mipmap/bg_main"
             tools:context=".ui.activity.SettingActivity">
 
 
@@ -34,7 +34,7 @@
                 android:layout_marginEnd="@dimen/gwm_dp_20"
                 android:layout_marginStart="@dimen/gwm_dp_20"
                 android:textSize="@dimen/gwm_sp_16"
-                android:background="@drawable/bg_radius_blue_8"
+                style="@style/btNormalStyles"
                 android:textColor="@color/white"
                 android:layout_marginTop="@dimen/gwm_dp_50"
                 android:gravity="center"
@@ -52,6 +52,7 @@
                 android:background="@drawable/bg_radius_blue_8"
                 android:layout_marginEnd="@dimen/gwm_dp_20"
                 android:gravity="center"
+                android:visibility="gone"
                 android:layout_height="@dimen/gwm_dp_50"/>
 
 

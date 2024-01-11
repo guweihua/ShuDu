@@ -22,5 +22,12 @@
     <color name="tv_999">#999</color>
     <color name="tv_green">#bddd22</color>
     <color name="bgColor">#f5f5f5</color>
+    <color name="bgGame">#52F1A9A9</color>
+
+
+    <color name="shudu_BACkground">#ffe6f0ff</color>
+    <color name="shudu_dark">#64ff0000</color>
+    <color name="shudu_light">#64ffffff</color>
+    <color name="shudu_hilite">#6400ff00</color>
 
 </resources>

@@ -6,7 +6,7 @@
     <data>
         <variable
             name="click"
-            type="com.gwh.numberoperation.ui.activity.PictureSelectorDemoActivity.ProxyClick" />
+            type="com.gwh.math.ui.activity.PictureSelectorDemoActivity.ProxyClick" />
 
 
     </data>

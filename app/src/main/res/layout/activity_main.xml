@@ -12,7 +12,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="@mipmap/splash"
+            android:background="@mipmap/bg_main"
             tools:context=".ui.activity.MainActivity">
 
 
@@ -21,6 +21,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:src="@mipmap/ic_index_setting"
                 android:padding="@dimen/gwm_dp_5"
+                android:visibility="gone"
                 android:layout_marginStart="@dimen/gwm_dp_5"
                 android:id="@+id/iv_setting2"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -40,11 +41,63 @@
 
 
         <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_top"
+                android:layout_marginTop="@dimen/gwm_dp_80"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/bg_main_top"
+                android:paddingHorizontal="@dimen/gwm_dp_50"
+                android:layout_marginHorizontal="@dimen/gwm_dp_50"
+                android:layout_height="wrap_content"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/ic_rongyi"
+                android:id="@+id/iv_rongyi"
+                app:layout_constraintTop_toBottomOf="@id/iv_top"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/ic_kunnan"
+                android:id="@+id/iv_kunnan"
+                app:layout_constraintTop_toBottomOf="@id/iv_rongyi"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_height="wrap_content"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/ic_diyu"
+                android:id="@+id/iv_diyu"
+                app:layout_constraintTop_toBottomOf="@id/iv_kunnan"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/ic_setting"
+                android:id="@+id/iv_setting"
+                app:layout_constraintTop_toBottomOf="@id/iv_diyu"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_height="wrap_content"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
                 android:layout_gravity="center"
                 android:layout_marginTop="400dp"
                 android:layout_width="@dimen/gwm_dp_150"
                 android:src="@mipmap/ic_player"
                 android:id="@+id/iv_play"
+                android:visibility="gone"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -59,7 +112,8 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/iv_play"
-                android:id="@+id/iv_setting"
+
+                android:visibility="gone"
                 android:layout_height="@dimen/gwm_dp_40"/>
 
 

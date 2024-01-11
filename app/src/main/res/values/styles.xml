@@ -17,4 +17,12 @@
         <item name="android:textSize">@dimen/gwm_sp_13</item>
     </style>
 
+    <style name="btNormalStyles">
+        <item name="android:textColor">@color/tv_666</item>
+        <item name="android:layout_width">@dimen/gwm_dp_40</item>
+        <item name="android:layout_height">@dimen/gwm_dp_40</item>
+        <item name="android:textSize">@dimen/gwm_sp_13</item>
+        <item name="android:background">@drawable/bg_radius_game_8</item>
+    </style>
+
 </resources>

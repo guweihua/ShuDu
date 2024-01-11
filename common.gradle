@@ -7,7 +7,7 @@ project.ext {
    // buildToolsVersion = "30.0.2"
     minSdkVersion = 21
     targetSdkVersion = 33
-    applicationId = "com.gwh.numberoperation"
+    applicationId = "com.gwh.math"
     versionCode = 2
     versionName = "1.0.1"
 
