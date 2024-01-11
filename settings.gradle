@@ -15,7 +15,7 @@ dependencyResolutionManagement {
         maven{ url 'https://maven.aliyun.com/repository/jcenter' }
     }
 }
-rootProject.name = "Sudoku Challenge"
+rootProject.name = "Sudoku nine-square"
 include ':app'
 include ':vip_base'
 

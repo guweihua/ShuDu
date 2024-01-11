@@ -12,7 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
-            android:background="@mipmap/splash"
+            android:background="@mipmap/bg_main"
             android:layout_height="match_parent"
             tools:context=".ui.activity.TxtActivity">
 
@@ -43,7 +43,8 @@
 
         <androidx.appcompat.widget.AppCompatTextView
                 android:layout_marginTop="@dimen/gwm_dp_10"
-                android:text="The number game is a puzzle game that gives you 4 numbers. Use addition, subtraction, multiplication, division and parentheses to find the answer. Each number can only be used once. This game can exercise your mathematical calculation skills and logical thinking skills, and can also increase your fun and challenge."
+                android:background="@drawable/bg_radius_game_8"
+                android:text="This is a game that challenges intelligence and logic - Sudoku nine squares, each house is divided into nine small grids, in these eighty-one grids to give a certain number of known numbers and solution conditions, use logic and reasoning, fill in the numbers of 1-9 in other spaces, so that 1-9 Each number appears only once in each row, each column and each house, you can complete the challenge, the difficulty is divided into easy, hard, hell mode, come and try it!"
                 android:layout_width="match_parent"
                 android:textSize="@dimen/gwm_sp_25"
                 app:layout_constraintTop_toBottomOf="@id/iv_back"
